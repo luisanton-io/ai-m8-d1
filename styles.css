@@ -26,8 +26,15 @@ body > div:nth-of-type(2) {
 } */
 
 #image-section {
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(0, 0, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between
 }
+
+/* #image-section p {
+    display: inline-block;
+} */
 
 #my-span {
     color: greenyellow
@@ -80,14 +87,50 @@ h1, h2, h3, h4, h5, h6 {
     right: 0px;
     height: 9vh;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1.5em
 }
 
+/* #navbar h3,
+#navbar ul {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+#navbar ul {
+    right: 1.5em
+} */
+
 #navbar h3,
-#navbar ul, 
+#navbar ul,
 #navbar li {
-    display: inline
+    display: inline;
+    color: white
 }
 
 #navbar li {
     list-style-type: none;
+}
+
+@media (max-width: 500px) {
+
+    #image-section {
+        flex-direction: column
+    }
+    #image-section img {
+        width: 100vw
+    }
+    /* 
+
+    #image-section p {
+        display: block
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        text-align: center;
+    } */
 }
